@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+   align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: rebeccapurple;
+}
+.loader{
+    
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 10px solid whitesmoke;
+    border-right: black;
+    border-radius: 50%;
+    animation: animate 1s ease infinite;
+}
+
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
